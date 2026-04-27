@@ -1,9 +1,8 @@
 package main
 
-import ( 
+import (
 	"fmt"
 )
-
 
 // ****** STRUCTS ******
 type Cliente struct {
@@ -161,7 +160,7 @@ func EliminarCliente(clientes []Cliente, id int) []Cliente {
 	return clientes
 }
 
-//  PRODUCTOS 
+//  PRODUCTOS
 
 func BuscarProductoPorID(productos []Producto, id int) int {
 	for i, p := range productos {
@@ -189,7 +188,7 @@ func EliminarProducto(productos []Producto, id int) []Producto {
 	return productos
 }
 
-//  PUNTEROS 
+//  PUNTEROS
 
 func DescontarSaldo(cliente *Cliente, monto float64) error {
 
